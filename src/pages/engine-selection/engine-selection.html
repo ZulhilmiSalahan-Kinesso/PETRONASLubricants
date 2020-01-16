@@ -1,0 +1,29 @@
+<!--
+  Generated template for the EngineSelectionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>EngineSelection</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+      <ion-list-header>
+        Engines
+      </ion-list-header>
+        <ion-item *ngFor="let engine of engines; let i = index" (click)="gotoCCSelection(i)">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/Recycle_Bin_Empty_Icon.png">
+          </ion-avatar>
+          <h2>{{engine}}</h2>
+          <p>{{engine}}</p>
+        </ion-item>
+      </ion-list>
+</ion-content>
